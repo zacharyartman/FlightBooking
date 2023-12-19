@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.usd.controllers.RemovePassengerFromFlightController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0">
+         <children>
+            <Pane layoutX="-4.0" layoutY="-3.0" prefHeight="67.0" prefWidth="704.0" style="-fx-background-color: #2c3e50;">
+               <children>
+                  <Text fill="WHITE" layoutX="176.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove Passenger from Flight">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="signOutButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleSignOutButton" prefHeight="40.0" prefWidth="111.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 16px;" styleClass="back-button" stylesheets="@../style.css" text="Sign Out" />
+               </children>
+            </Pane>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleBackButton" style="-fx-background-color: transparent;" styleClass="back-button" stylesheets="@../style.css">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/backButtonIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="removePassengerFromFlightButton" layoutX="216.0" layoutY="367.0" mnemonicParsing="false" onAction="#handleRemovePassengerFromFlightButton" prefHeight="38.0" prefWidth="268.0" stylesheets="@../style.css" text="Remove Passenger from Flight" />
+            <Pane layoutX="31.0" layoutY="195.0" prefHeight="50.0" prefWidth="618.0" style="-fx-background-color: lightgray; -fx-background-radius: 20px;">
+               <children>
+                  <Text layoutX="17.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flight:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ComboBox fx:id="flightComboBox" layoutX="123.0" layoutY="9.0" prefHeight="30.0" prefWidth="467.0" style="-fx-background-color: white;" />
+               </children>
+            </Pane>
+            <Pane layoutX="31.0" layoutY="277.0" prefHeight="50.0" prefWidth="618.0" style="-fx-background-color: lightgray; -fx-background-radius: 20px;">
+               <children>
+                  <Text layoutX="17.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passenger Username:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="passengerUsernameField" layoutX="229.0" layoutY="10.0" prefHeight="30.0" prefWidth="362.0" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
