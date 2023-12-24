@@ -1,4 +1,4 @@
-module edu.usd {
+module com.zachartman {
     requires javafx.controls;
     requires javafx.fxml;
             
@@ -7,12 +7,12 @@ module edu.usd {
                 requires org.kordamp.ikonli.javafx;
     requires java.sql;
 
-    opens edu.usd to javafx.fxml;
-    exports edu.usd;
-    exports edu.usd.models;
-    opens edu.usd.models to javafx.fxml;
-    exports edu.usd.utils;
-    opens edu.usd.utils to javafx.fxml;
-    exports edu.usd.controllers;
-    opens edu.usd.controllers to javafx.fxml;
+    opens com.zachartman to javafx.fxml;
+    exports com.zachartman;
+    exports com.zachartman.models;
+    opens com.zachartman.models to javafx.fxml;
+    exports com.zachartman.utils;
+    opens com.zachartman.utils to javafx.fxml;
+    exports com.zachartman.controllers;
+    opens com.zachartman.controllers to javafx.fxml;
 }

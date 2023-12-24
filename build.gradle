@@ -6,7 +6,7 @@ plugins {
   id 'org.beryx.jlink' version '2.25.0'
 }
 
-group 'edu.usd'
+group 'com.zachartman'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -25,8 +25,8 @@ tasks.withType(JavaCompile) {
 }
 
 application {
-  mainModule = 'edu.usd'
-  mainClass = 'edu.usd.Main'
+  mainModule = 'com.zachartman'
+  mainClass = 'com.zachartman.Main'
 }
 
 javafx {

@@ -23,7 +23,7 @@ Upon account creation and login, users have the following capabilities:
 
 **Usage**
 
-This flight system was created using IntelliJ and the gradle build system thus dependencies can be accessed within the gradle.build file. Unit tests have full coverage of functionality. They can be accessed and executed within the Test folder of the project and are similarly part of the edu.usd package.
+This flight system was created using IntelliJ and the gradle build system thus dependencies can be accessed within the gradle.build file. Unit tests have full coverage of functionality. They can be accessed and executed within the Test folder of the project and are similarly part of the com.zachartman package.
 
 Once all prerequisites are met and the database is working, the graphical user interface is available to be interacted with by running the Main.java file. To interact with the interface as a user, create an account then login with your provided credentials. To access administrator privileges, login with airline approved admin credentials (sample administrator with **username:** zartman and **password:** password)
 
