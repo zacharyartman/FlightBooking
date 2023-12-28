@@ -1,34 +1,38 @@
-**Flight Booking**
+# Flight Booking System
 
-A flight booking system where administrators can make adjustments and changes to flight-related matters, and users can conveniently book flights.
+## Introduction
+The Flight Booking System is a comprehensive solution for managing flight operations and user bookings. It offers distinct functionalities for administrators to handle flight-related activities and for users to book flights conveniently.
 
-Upon successful verification of admin login, administrators have the following management capabilities:
-  - Add/Remove existing flights
-  - Add/Remove passengers from designated flights
-  - Add airport allowing for expansion
+## Administrator Features
+- **Flight Management**: Ability to add or remove flights.
+- **Passenger Management**: Add or remove passengers from flights.
+- **Airport Expansion**: Facilitate expansion by adding new airports.
 
-Upon account creation and login, users have the following capabilities:
-  - Search for available flights based on specified parameters or generalized
-  - Book flights
-  - View/Change/Cancel booked flights
-  - Access past flight history
+## User Features
+- **Flight Search**: Search for flights using specific or general criteria.
+- **Flight Booking**: Book available flights.
+- **Manage Bookings**: View, change, or cancel booked flights.
+- **Flight History**: Access past flight history.
 
+## Getting Started: Database Setup
+1. Download MySQL Community Edition: [MySQL Community Edition](https://dev.mysql.com/downloads/mysql/)
+2. Download MySQL Workbench: [MySQL Workbench](https://www.mysql.com/products/workbench/)
+3. Update your username and password in [DatabaseConnection.java](src/main/java/edu/usd/utils/DatabaseConnection.java).
+4. Run [DatabaseTablesCreation](src/main/java/edu/usd/utils/DatabaseTablesCreation.java) to set up the database and tables.
+    - Default admin credentials: **username:** zartman, **password:** password
+    - Ensure the database username, server, and password are correct.
 
-**GETTING STARTED: HOW TO GET THE DATABASE WORKING**
-1. Download MySQL Community Edition (https://dev.mysql.com/downloads/mysql/)
-2. Download MySQLWorkbench (https://www.mysql.com/products/workbench/)
-3. Remember what you make your password. Update your username and password in this [file](src/main/java/edu/usd/utils/DatabaseConnection.java). The server is most likely the same if you didn't change anything. 
-4. Run the file [DatabaseTablesCreation](src/main/java/edu/usd/utils/DatabaseTablesCreation.java). This will create the database and necessary tables, as well as add a sample administrator with **username:** zartman and **password:** password. Just like before, ensure that the username, server, and password of the database are correct.
+## Usage
+- Built with IntelliJ and Gradle. Dependencies in `gradle.build`.
+- Full coverage unit tests in the Test folder, under the com.zachartman package.
+- Launch the GUI by running `Main.java`.
+- User access: Create an account and log in.
+- Admin access: Log in with airline-approved credentials (e.g., zartman/password).
 
+## Additional Information
+- Find airport latitude and longitude online. Use negative numbers for South and West coordinates.
 
-**Usage**
-
-This flight system was created using IntelliJ and the gradle build system thus dependencies can be accessed within the gradle.build file. Unit tests have full coverage of functionality. They can be accessed and executed within the Test folder of the project and are similarly part of the com.zachartman package.
-
-Once all prerequisites are met and the database is working, the graphical user interface is available to be interacted with by running the Main.java file. To interact with the interface as a user, create an account then login with your provided credentials. To access administrator privileges, login with airline approved admin credentials (sample administrator with **username:** zartman and **password:** password)
-
-You can find Airport latitude and longitude by googling the airport. When using
-latitude and longitude, use negative numbers for South and West. Ex:
+**Example:**
 <pre><code>Airport Name: San Diego International Airport
 Airport Code: SAN
 Airport Latitude: 32.732346
